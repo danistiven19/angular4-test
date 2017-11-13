@@ -1,0 +1,15 @@
+<h1>Login Component</h1>
+<div>
+  <div [style.width.px]="100" [style.text-align]="center">
+    Email: <input type="email" [(ngModel)]="email" />
+    <br />
+    <div  [style.margin-top.px]="10">
+      Password: <input type="password" [(ngModel)]="password" />
+    </div>
+    <br />
+    <button [style.margin-top.px]="20" (click)="onLogin()">
+      Login
+    </button>
+
+  </div>
+</div>
